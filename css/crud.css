@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header {
+    transition: 0.5s ease-in-out;
+    border-radius: 0 0 10% 10% ;
+}
+header h2 {
+    letter-spacing: 6px ; 
+}
+header p {
+    letter-spacing: 3px;
+}
+form {
+    border-radius: 10px;
+    background-color: rgba(255, 115, 0, 0.836);
+}
+form input {
+   background-color: rgba(255, 34, 0, 0.441);
+   color: black ; 
+   border: none;
+   outline: none;
+   transition: transform 0.5s ease-in-out ease-in-out;
+   border-radius: 5px;
+}
+form input::placeholder {
+    color: rgba(255, 255, 255, 0.664);
+    padding: 5px;
+}
+input:focus{
+    transform: scale(1.1);
+}
+#total {
+    font-size: medium;
+    border-radius: 5px;
+    font-weight: bolder ;
+
+
+}
+#total::before {
+    content: 'Total : ';
+}
+#create {
+    border-radius: 10px;
+    background-color: rgb(145, 76, 12);
+    outline: 0;
+    border: 0;
+    background-color: rgb(255, 51, 0);
+    transition : all ease-in-out 0.2s ;
+}
+
+table {
+    overflow-y: hidden !important;
+}
+#create.red-background {background-color: rgb(255, 34, 0);}
+#create.green-background{background-color: green;}
+
+button.update {
+    background-color: rgb(30, 125, 91) ; 
+    border:none ; 
+    outline: none;
+}
+button.update:hover {
+    background-color: rgba(30, 125, 92, 0.788);
+}
+button.delete {
+    background-color: red;
+    border: none;
+    outline: none;
+}
+button.delete:hover {
+    background-color: rgba(240, 57, 7, 0.788);
+}

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+
+    <!-- Bootstrap  -->
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+
+    <!-- Style -->
+    <link rel="stylesheet" href="css/crud.css">
+
+</head>
+<body>
+
+<!-- Header -->
+
+<header class="col-12 bg-success container d-flex flex-column align-items-center justify-content-center p-4">
+    <h2 class="text-black-50 p-2">CRUD</h2>
+    <p>Created By <strong>Abdoo Majd</strong></p>
+</header>
+
+<!-- Form -->
+<form action="" class="container p-4 my-4">
+    
+    <!-- Title Input  -->
+    <input type="text" placeholder="title" id="title" class="col-10 border-0 p-2 my-3 text-center mx-auto d-flex">
+
+    <!-- Prices -->
+
+    <div class="prices row py-2">
+        <input onkeyup="getTotal()" type="number" id="price" placeholder="price" class="col-md-2 col-5 border-0 p-2 my-3 mx-md-3 mx-3">
+        <input onkeyup="getTotal()" type="number" id="taxes" placeholder="taxes" class="col-md-2 col-5 border-0 p-2 my-3 mx-md-3 mx-3">
+        <input onkeyup="getTotal()" type="number" id="ads" placeholder="ads" class="col-md-2 col-5 border-0 p-2 my-3 mx-md-3 mx-3">
+        <input onkeyup="getTotal()" type="number" id="discount" placeholder="discount" class="col-md-2 col-5 border-0 p-2 my-3 mx-md-3 mx-3">
+        <small onkeyup="getTotal()" id="total" class="col-xl-2 col-lg-1 col-md-1 col-12 d-flex align-items-center justify-content-md-center justify-content-center mx-md-0 my-md-0 my-3"></small>
+
+    </div>
+
+    <!-- Count + Category  -->
+    <div class="row container text-center d-flex align-items-center justify-content-center">
+        <input type="number" id="count" placeholder="count" class="col-md-5 mx-3 col-5 border-0 p-2 my-3 ">
+        <input type="number" id="category" placeholder="category" class="col-md-5 mx-3 col-5 border-0 p-2 my-3 ">
+
+
+    </div>
+    <!-- Create Button -->
+    <button id="create" class="col-10 mx-auto d-flex align-items-center justify-content-center my-3 p-2">Create</button>
+    <!-- Outputs  -->
+    <div class="outputs">
+
+        <!-- Search Block -->
+         <div class="searchBlock">
+            <input type="search" id="search" placeholder="Searh Here : " class=" col-md-11 mx-auto d-flex align-content-center justify-content-center col-6 border-0 p-2 my-3">
+         </div>
+        <!-- Table  -->
+        <table class=" text-center  table table-responsive-sm table-responsive-lg table-responsive-md table-responsive-xl table-responsive">
+
+            <tr>
+                <th>id</th>
+                <th>title</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>Total</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+
+            <tbody id="tbody">
+
+            </tbody>
+        </table>
+    </div>
+</form>
+
+<!-- Bootstrap  -->
+<link rel="stylesheet" href="bootstrap/js/bootstrap.min.js">
+<!-- Script -->
+<script src="js/crud.js"></script>
+</body>
+</html>
+
